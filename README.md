@@ -1,0 +1,2 @@
+# auto_update_githubhosts
+python自动更新github hosts，加速访问github
