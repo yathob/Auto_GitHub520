@@ -11,7 +11,7 @@ File.close()
 githubhost = re.findall(r'# GitHub520 Host Start(.*?)# GitHub520 Host End', content, re.S)
 if len(githubhost) > 0:
     content = content.replace(githubhost[0], '')
-    content = content.replace('# New！欢迎使用基于DNS的新方案# GitHub Host End', '')
+    content = content.replace('# GitHub520 Host Start# GitHub520 Host End', '')
 
 githubHostNew = requests.get('https://raw.hellogithub.com/hosts')
 
